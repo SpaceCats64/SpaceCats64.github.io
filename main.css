@@ -34,8 +34,6 @@ li a{
 	text-shadow: 2px 1.5px 2px #000000;
 }
 li:hover a{
-	/*background-color: #4C4C4C;
-	border-radius: 5px;*/
 	transform: scale(.9);
 }
 #nav{
@@ -44,8 +42,8 @@ li:hover a{
 	padding: 1px;
 }
 body {
-	/*background-image: url("http://th01.deviantart.net/fs71/PRE/i/2011/017/6/f/starfield_stock_by_freelancah-d2k5mcu.jpg");*/
-	background-color: #686868;
+	
+	background-color: #757575;
 }
 #Textdiv, #actualtext{
     padding: 10px;
@@ -56,6 +54,7 @@ body {
 	font-family: Tahoma;
 	background-color: white;
 	word-wrap: normal;
+	box-shadow: 2px 3px 3px #404040;
 }
 #bigposts{
 	position: absolute;
@@ -68,6 +67,7 @@ body {
 	background-color: white;
 	font-family: tahoma;
 	border-radius: 15px;
+	box-shadow: 1px 2px 3px #404040;
 }
 #footer{
 	position: absolute;
