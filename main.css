@@ -48,7 +48,7 @@ body {
 #Textdiv, #actualtext{
     padding: 10px;
 	float:right;
-	min-width:57%;
+	min-width:55%;
     min-height: 150px;
     border-radius: 10px;
 	font-family: Tahoma;
