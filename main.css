@@ -76,3 +76,8 @@ body {
 	font-size: 10px;
 	font-family: tahoma;
 }
+#slideshow{
+	max-height: 190px;
+	float:center;
+	border-radius: 5px;
+}
