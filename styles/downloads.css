@@ -30,7 +30,7 @@ body {
 }
 #footer{
 	position: absolute;
-	top: 820px;
+	top: 120%;
 	left: 40%;
 	font-size: 10px;
 	font-family: tahoma;
@@ -39,7 +39,7 @@ body {
 	color: white;
 	font-size: 40px;
 	text-shadow: 2px 3px 2px #4D4D4D;
-	font-family: Tahoma;
+	
 	text-decoration: none;
 	-webkit-user-select: none;
 	-moz-user-select: none;
@@ -49,13 +49,14 @@ body {
 	transform: scale(.99);
 }
 #downloadList{
+	min-width: 35%;
 	padding: 8px;
 	margin: 22px;
 	background-color: #007FFF;
 	border-radius: 10px;
 	position: fixed;
-	top: 80px;
-	left: -30px;
+	top: 14%;
+	left: -2.2%;
 	list-style: none;
 	border-style: solid;
 	border-width: 3px;
@@ -67,37 +68,40 @@ body {
 	border-radius: 5px;
 	right:2%;
 	max-height: 300px;
-	border-color: black;
-	border-style: solid;
-	border-width: 2px; 
+}
+#descriptions{
+	min-width: 60%;
+	position: absolute;
+	right: 2%;
+	top: 14%;
+	z-index: -1;
 }
 #bossRush{
+	font-family: Tahoma;
 	background-color: white;
 	border-radius: 15px;
 	min-width: 60%;
-	position: absolute;
-	top: 120px;
 	padding: 6px;
-	right: 2%;
+	min-height: 430px;
 	box-shadow: 2px 3px 3px #404040;
 }
 #betaGust{
+	font-family: Tahoma;
 	background-color: white;
 	border-radius: 15px;
 	min-width: 60%;
-	position: absolute;
-	top: 65%;
+	position: relative;
+	top: 40px;
 	padding: 6px;
-	right: 2%;
 	box-shadow: 2px 3px 3px #404040;
 }
 #bitblock{
+	font-family: Tahoma;
 	background-color: white;
 	border-radius: 15px;
 	min-width: 60%;
-	position: absolute;
-	top: 75%;
+	position: relative;
+	top: 80px;
 	padding: 6px;
-	right: 2%;
 	box-shadow: 2px 3px 3px #404040;
 }
