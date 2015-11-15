@@ -24,7 +24,7 @@
 	-moz-user-select: none;
 	-ms-user-select: none;
 }
-li a{
+#nav a{
 	color:white;
 	text-decoration: none;
 	font-size: 20px;
@@ -33,7 +33,7 @@ li a{
 	padding: 10px;
 	text-shadow: 2px 1.5px 2px #000000;
 }
-li:hover a{
+#nav:hover a{
 	transform: scale(.9);
 }
 #nav{
@@ -80,4 +80,17 @@ body {
 	max-height: 190px;
 	float:center;
 	border-radius: 5px;
+}
+#LMBR{
+	color: black;
+	position: absolute;
+	top: 80px;
+	left: 38%;
+	font-size: 30px;
+	text-shadow: 2px 3px 2px #4D4D4D;
+	font-family: Tahoma;
+	text-decoration: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
 }
