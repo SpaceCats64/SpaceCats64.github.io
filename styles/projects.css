@@ -37,6 +37,7 @@ body {
 	font-family: tahoma;
 }
 #pageTitle{
+	font-family: Tahoma, Arial;
 	font-size: 4em;
 	text-align: center;
 	color: white;
@@ -45,6 +46,7 @@ body {
 	margin-left: 45%;
 	color: blue;
 	text-decoration: none;
+	font-family: Tahoma, Arial;
 }
 a:hover{
 	background-color: blue;
@@ -58,9 +60,11 @@ a:hover{
     text-decoration: none;
 }
 .pTitle{
+	font-family: Tahoma, Arial;
 	font-size: 2rem;
 }
 .project{
+	font-family: Tahoma, Arial;
 	margin-top: 5rem;
 	background-color: white;
 	border-radius: 25px;
