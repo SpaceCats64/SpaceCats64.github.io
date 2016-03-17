@@ -72,6 +72,9 @@ a:hover{
 	width: 55rem;
 }
 .previewImg{
+	display: block;
+	margin: auto;
 	height: 20em;
 	padding: 5px;
+
 }
