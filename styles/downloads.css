@@ -39,7 +39,8 @@ body {
 	color: white;
 	font-size: 30px;
 	text-shadow: 2px 3px 2px #4D4D4D;
-	margin-left: .5rem;
+	margin: .5rem;
+	padding: .2rem;
 	text-decoration: none;
 	-webkit-user-select: none;
 	-moz-user-select: none;
@@ -49,7 +50,7 @@ body {
 	transform: scale(.99);
 }
 .downloadList{
-	max-width: 25rem;
+	min-width: 25rem;
 	padding: 8px;
 	margin: 22px;
 	font-family: Tahoma, Arial;
