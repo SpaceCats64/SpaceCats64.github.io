@@ -42,8 +42,13 @@ body {
 	text-align: center;
 	color: white;
 }
+#bb{
+	margin-left: 15%;
+}
 .ghLink a{
-	margin-left: 45%;
+	display: inline-block;
+	margin-left: 14em;
+	position: relative;
 	color: blue;
 	text-decoration: none;
 	font-family: Tahoma, Arial;
