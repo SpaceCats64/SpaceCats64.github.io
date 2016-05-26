@@ -2,6 +2,8 @@ var index = 0;
 var imgList = ["http://puu.sh/llWhI/bb34af74fc.png", "http://puu.sh/llWdT/8fe6eeefa9.png", "http://puu.sh/l1cnC/9570ede389.png", 
  "http://puu.sh/kIeP1/8c6af8c7f8.jpg"];
  $(document).ready(() => {
+ 	$("#bpTex").toggle();
+
 	$('#slideshow').click(()=>{
 		$('#slideshow').fadeOut(600, () => {
 			index += 1;
@@ -10,6 +12,10 @@ var imgList = ["http://puu.sh/llWhI/bb34af74fc.png", "http://puu.sh/llWdT/8fe6ee
 			}
 			$('#slideshow').attr('src', imgList[index]).fadeIn(600);
 		});
+	});
+
+	$("#bigposts").click(()=>{
+		$("#bpTex").toggle(300);
 	});
 
 	getLatestVideo();

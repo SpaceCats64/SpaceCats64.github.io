@@ -2,7 +2,7 @@
 	position: fixed;
 	top: 0px;
 	left: 0px;
-	background-color: #007FFF;
+	background-color: #005500;
 	min-height: 50px;
 	width: 100%;
 	box-shadow: 0px 4px #404040;
@@ -25,53 +25,40 @@
 	padding: 1px;
 }
 body {
-	margin-top: 5rem;
-	background-color: #757575;
-}
-#footer{
-	position: absolute;
-	top: 120%;
-	left: 40%;
-	font-size: 10px;
-	font-family: Tahoma, Arial;
-}
-.downloadList a{
 	color: white;
-	font-size: 30px;
-	text-shadow: 2px 3px 2px #4D4D4D;
+	margin-top: 5rem;
+	background-color: #111;
+}
+#descriptions{
+	font-family: Tahoma, Arial;
+	margin: auto;
+}
+.post{
+	color: white;
+	padding: 10px;
+	background-color: #1a1a1a;
+	border-radius: 25px;
+	margin-left: 2rem;
+	margin-right: 2rem;
+	text-align: center;
+}
+.post a{
+	color: white;
+	font-size: 20px;
 	margin: .5rem;
 	padding: .2rem;
-	text-decoration: none;
+	text-align: center;
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
 }
-.downloadList :hover{
-	transform: scale(.99);
-}
-.downloadList{
-	min-width: 25rem;
-	padding: 8px;
-	margin: 22px;
-	font-family: Tahoma, Arial;
-	background-color: #007FFF;
-	border-radius: 10px;
-	position: fixed;
-	top: 14%;
-	left: -2.3%;
-	list-style: none;
-	border-style: solid;
-	border-width: 3px;
-	border-color: #404040;
-}
-#descriptions{
-	float: right;
-	font-family: Tahoma, Arial;
-	margin-right: 1rem;
-}
-.post{
-	padding: 10px;
-	background-color: white;
-	border-radius: 25px;
-	margin-top: 5rem;
+.title{
+	text-align: center;
+	margin-top: .5em;
+	background-color: #1a1a1a;
+	border-radius: 5px;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
 }
