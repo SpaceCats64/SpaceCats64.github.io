@@ -1,8 +1,8 @@
 var index = 0;
 var imgList = ["http://puu.sh/llWhI/bb34af74fc.png", "http://puu.sh/llWdT/8fe6eeefa9.png", "http://puu.sh/l1cnC/9570ede389.png", 
  "http://puu.sh/kIeP1/8c6af8c7f8.jpg"];
- $(document).ready(() => {
- 	$("#bpTex").toggle();
+$(document).ready(() => {
+ 	$("#vidLst").find("ul").slideToggle();
 
 	$('#slideshow').click(()=>{
 		$('#slideshow').fadeOut(600, () => {
@@ -14,13 +14,13 @@ var imgList = ["http://puu.sh/llWhI/bb34af74fc.png", "http://puu.sh/llWdT/8fe6ee
 		});
 	});
 
-	$("#bigposts").click(()=>{
-		$("#bpTex").toggle(300);
+	$("#vidLst").find("h3").click(()=>{
+		$("#vidLst").find("ul").slideToggle(200);
 	});
 
-	getLatestVideo();
+	getVideos();
 
-	function getLatestVideo(){
+	function getVideos(){
 		$.get(
 			"https://www.googleapis.com/youtube/v3/channels", {
 				part: 'contentDetails',
@@ -29,9 +29,25 @@ var imgList = ["http://puu.sh/llWhI/bb34af74fc.png", "http://puu.sh/llWdT/8fe6ee
 				(data) =>{
 					$.each(data.items, (i, item) => {
 						p = item.contentDetails.relatedPlaylists.uploads;
-						return getVid(p);
+						getList(p);
+						getVid(p);
 					});
 				}
+		);
+	};
+
+	function getList (pl) {
+		$.get(
+			"https://www.googleapis.com/youtube/v3/playlistItems", {
+			part: 'snippet',
+			maxResults: 6,
+			playlistId: pl,
+			key: 'AIzaSyDHhN8ZabTXdziXf_NjZQD00N8bDDFgSEY'},
+			(data) =>{
+				$.each(data.items, (i, item) => {
+					$('#playLst').append('<li><a href="https:/www.youtube.com/watch?v=' + item.snippet.resourceId.videoId + '"><img src="' + item.snippet.thumbnails.high.url + '"/></li></a>');
+				});
+			}
 		);
 	};
 
