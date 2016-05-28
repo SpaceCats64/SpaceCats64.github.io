@@ -45,7 +45,7 @@ $(document).ready(() => {
 			key: 'AIzaSyDHhN8ZabTXdziXf_NjZQD00N8bDDFgSEY'},
 			(data) =>{
 				$.each(data.items, (i, item) => {
-					$('#playLst').append('<li><a href="https:/www.youtube.com/watch?v=' + item.snippet.resourceId.videoId + '"><img src="' + item.snippet.thumbnails.high.url + '"/></li></a>');
+					$('#playLst').append('<li><a href="https://www.youtube.com/watch?v=' + item.snippet.resourceId.videoId + '"><img src="' + item.snippet.thumbnails.high.url + '"/></li></a>');
 				});
 			}
 		);

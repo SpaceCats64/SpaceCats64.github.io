@@ -53,9 +53,8 @@ body {
 	position: absolute;
 	float:left;
 	margin-top: 2rem;
-	margin-left: 3px;
 	padding: 10px;
-	min-width: 97vw;
+	min-width: 96vw;
 	font-family: Tahoma, Arial;
 	border-radius: 5px;
 	color: white;
