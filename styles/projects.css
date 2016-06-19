@@ -6,6 +6,7 @@
 	min-height: 50px;
 	width: 100%;
 	box-shadow: 0px 4px #404040;
+	z-index: 1;
 }
 #nav a{
 	color:white;
@@ -57,6 +58,7 @@ a:hover{
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
+    z-index: 0;
 }
 .pTitle{
 	font-family: Tahoma, Arial;

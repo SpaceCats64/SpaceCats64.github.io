@@ -14,6 +14,10 @@ $(document).ready(() => {
 		});
 	});
 
+	$('#nav').find("li").find("a").hover(()=>{
+		$(this).toggle();
+	});
+
 	$("#vidLst").find("h3").click(()=>{
 		$("#vidLst").find("ul").slideToggle(200);
 	});
@@ -25,7 +29,7 @@ $(document).ready(() => {
 			"https://www.googleapis.com/youtube/v3/channels", {
 				part: 'contentDetails',
 				id: 'UCzaQEP2Se2L0Tx5O0UyZdUg',
-				key: 'AIzaSyDHhN8ZabTXdziXf_NjZQD00N8bDDFgSEY'},
+				key: 'AIzaSyCoUXrbm3F-kOaSWgeV6fhxbTP_zQ2O8c4'},
 				(data) =>{
 					$.each(data.items, (i, item) => {
 						p = item.contentDetails.relatedPlaylists.uploads;
@@ -42,7 +46,7 @@ $(document).ready(() => {
 			part: 'snippet',
 			maxResults: 6,
 			playlistId: pl,
-			key: 'AIzaSyDHhN8ZabTXdziXf_NjZQD00N8bDDFgSEY'},
+			key: 'AIzaSyCoUXrbm3F-kOaSWgeV6fhxbTP_zQ2O8c4'},
 			(data) =>{
 				$.each(data.items, (i, item) => {
 					$('#playLst').append('<li><a href="https://www.youtube.com/watch?v=' + item.snippet.resourceId.videoId + '"><img src="' + item.snippet.thumbnails.high.url + '"/></li></a>');
@@ -57,7 +61,7 @@ $(document).ready(() => {
 			part: 'snippet',
 			maxResults: 1,
 			playlistId: pl,
-			key: 'AIzaSyDHhN8ZabTXdziXf_NjZQD00N8bDDFgSEY'},
+			key: 'AIzaSyCoUXrbm3F-kOaSWgeV6fhxbTP_zQ2O8c4'},
 			(data) =>{
 				$.each(data.items, (i, item) => {
 					$('#lVideo').attr('src', "https://www.youtube.com/embed/" + item.snippet.resourceId.videoId);
