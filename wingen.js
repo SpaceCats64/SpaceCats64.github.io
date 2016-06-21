@@ -27,31 +27,11 @@ let getText = (fCsv, tCol, tex, line)=>{
 	return ( !fCsv ? '<COLOR>('+(tCol+1)+')<SAY>'+tex :"<SPEAK>("+line+")")
 }
 
-let genCases = (input)=>{
-	cases = input.split("/");
-	choice = "<CHOICE>";
-	for (var i = 0; i < cases.length; i++) {
-		choice += ("'"+cases[i]+"'");
-	}
-	choice += ("<LISTEND>\n");
-	for(var i = 0; i < cases.length; i++){
-		choice += ("<CASE>'"+cases[i]+"'\n");
-	}
-	return choice;
-}
-
 $(document).ready(()=>{
-	$('#betaFeatures').hide();
 	$('#srcCsv').hide();
-	$("#showBeta").click(()=>{
-		$('#betaFeatures').toggle(150);
-	});
 	$("#fromCsv").click(()=>{
 		$('#srcSay').toggle(150);
 		$('#srcCsv').toggle(150);
-	});
-	$("#genSwitch").click(()=>{
-		$("#msgTag").val(genCases($('#cases').val()));
 	});
 	$("#gen").click(()=>{
 		winPos = $('#winPos').prop('selectedIndex');

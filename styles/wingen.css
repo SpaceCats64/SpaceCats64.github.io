@@ -10,7 +10,7 @@ body{
 	border-color: green;
 	border-radius: 5px;
 }
-.genButton{
+#gen{
 	position: relative;
 	display: block;
 	margin: auto;
@@ -21,7 +21,7 @@ body{
 	transition-duration: 0.4s;
 	padding: 2px;
 }
-.genButton:hover{
+#gen:hover{
 	background-color: white;
 	color: black;
 }
