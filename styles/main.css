@@ -2,17 +2,10 @@
 	position: fixed;
 	top: 0px;
 	left: 0px;
-	background-color: #005500;
+	background-color: #388e3c;
 	min-height: 50px;
 	width: 100%;
-	box-shadow: 0px 4px #404040;
-}
-#lVideo{
-	border-radius: 10px;
-	border-style: solid;
-	border-width: 0px;
-	margin-left: 1em;
-	margin-top: 1em;
+	box-shadow: 0px 0px 6px 0.2px #212121;
 }
 #nav a{
 	color:white;
@@ -32,56 +25,57 @@
 	padding: 1px;
 }
 body {
-	
-	background-color: #111;
-}
-#pcontent{
+	background-color: #3f51b5;/*#4caf50;*/
 	margin-top: 5rem;
+	font-family: Tahoma, Arial;
 }
-#Textdiv, #actualtext{
-	color: white;
+table{
+	width: 100%;
+}
+.container{
+	background-color: #388e3c;
+	color: #212121;
     padding: 10px;
-	float:right;
-	width: 55%;
-    min-height: 150px;
-    border-radius: 5px;
-	font-family: Tahoma, Arial;
-	background-color: #1a1a1a;
-	word-wrap: normal;
+    min-height: 240px;
+	box-shadow: 0px 0px 4px #212121;
 }
-#bigposts{
-	position: absolute;
-	float:left;
-	margin-top: 2rem;
-	padding: 10px;
-	min-width: 96vw;
-	font-family: Tahoma, Arial;
+.container > h1, .container > h3{
+	color: #FFFFFF;
+}
+a{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+#morevids{
+	float: left;
+	margin-top: 2%;
+	padding:5px;
 	border-radius: 5px;
-	color: white;
-	background-color: #1a1a1a;
-}
-#slideshow{
+	max-height: 3em;
 	display: block;
-	max-height: 190px;
-	float:center;
-	border-radius: 5px;
+	color: #FFFFFF;
+	box-shadow: 0px 0px 2px #404040;
+	background-color: #607d8b;
+}
+#lVideo{
+	width: 94%;
+}
+#lVideo > iframe{
+	display: block;
 	margin: auto;
 }
-#vidLst{
-	position: absolute;
-	background-color: #1a1a1a;
-	width: 100%;
-	top: 80vh;	
-	left: 0px;
-	color: white;
-	border-top: 3px solid #222222;
-	border-bottom: 3px solid #222222;
+#vCell{
+	max-width: 30vw;
+}
+#slideshow{
+	max-height: 190px;
 }
 #playLst *{
-	list-style-type: none;
 	float: left;
-	width: 10em;
-	padding-bottom: 5px;
-	border-radius: 10px;
-	margin-right: 5vh;
+}
+#exVideos{
+	display: none;
+	background-color: #607d8b;
+	padding: 5px;
+	box-shadow: -2px 2px 5px #404040;
 }

@@ -2,7 +2,7 @@ var index = 0;
 var imgList = ["http://puu.sh/llWhI/bb34af74fc.png", "http://puu.sh/llWdT/8fe6eeefa9.png", "http://puu.sh/l1cnC/9570ede389.png", 
  "http://puu.sh/kIeP1/8c6af8c7f8.jpg"];
 $(document).ready(() => {
- 	$("#vidLst").find("ul").slideToggle();
+ 	//$("#vidLst").find("ul").slideToggle();
 
 	$('#slideshow').click(()=>{
 		$('#slideshow').fadeOut(600, () => {
@@ -10,7 +10,7 @@ $(document).ready(() => {
 			if (index == imgList.length) {
 				index = 0;
 			}
-			$('#slideshow').attr('src', imgList[index]).fadeIn(600);
+			$('#slideshow').attr('src', imgList[index]).delay(100).fadeIn(600);
 		});
 	});
 
@@ -18,8 +18,8 @@ $(document).ready(() => {
 		$(this).toggle();
 	});
 
-	$("#vidLst").find("h3").click(()=>{
-		$("#vidLst").find("ul").slideToggle(200);
+	$("#morevids").click(()=>{
+		$("#exVideos").animate({width:'toggle'}, 200);
 	});
 
 	getVideos();
@@ -44,12 +44,13 @@ $(document).ready(() => {
 		$.get(
 			"https://www.googleapis.com/youtube/v3/playlistItems", {
 			part: 'snippet',
-			maxResults: 6,
+			maxResults: 5,
 			playlistId: pl,
 			key: 'AIzaSyCoUXrbm3F-kOaSWgeV6fhxbTP_zQ2O8c4'},
 			(data) =>{
 				$.each(data.items, (i, item) => {
-					$('#playLst').append('<li><a href="https://www.youtube.com/watch?v=' + item.snippet.resourceId.videoId + '"><img src="' + item.snippet.thumbnails.high.url + '"/></li></a>');
+					$("#exVideos tr").append('<td><a href="https://www.youtube.com/watch?v=' + item.snippet.resourceId.videoId + '"><img src="' + item.snippet.thumbnails.high.url + '" style="max-height: 190px; margin-left: 13px; border-radius: 4px;"/></a></td>');
+					//$('#playLst').append('<li><a href="https://www.youtube.com/watch?v=' + item.snippet.resourceId.videoId + '"><img src="' + item.snippet.thumbnails.high.url + '"/></li></a>');
 				});
 			}
 		);

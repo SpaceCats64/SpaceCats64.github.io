@@ -18,22 +18,34 @@
 	</div>
 </head>
 <body>
-	<div id="pcontent">
-		<iframe id="lVideo" width="560" height="315" src="https://www.youtube.com/embed/bcg2SROGLdg" frameborder="0" allowfullscreen></iframe>
-		<div id="Textdiv">
-            <h1 id="Ttitle">What I Do</h1>
-            <p>I make mods and hacks of games, for knowledge and for fun. Like these things.</p>
-            <img id="slideshow" src="http://puu.sh/llWhI/bb34af74fc.png"/>
-        </div>
-	</div>
-	<div id="bigposts">
-		<h3>Small Experiment</h3>
-		<p>I decided to make a small little experiment for fun, you can find it <a href="wingen.html">here</a>, its for generating window tags in LM scripting</p>
-	</div>
-    <div id = "vidLst">
-    	<h3 style="padding-left: 15px;">More Videos</h3>
-    	<ul id="playLst">
-    	</ul>
+	<table>
+		<tbody>
+			<tr>
+			    <td id="vCell"><div id="lVideo" class="container">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/bcg2SROGLdg" frameborder="0" allowfullscreen></iframe>
+				</div></td>
+				<td><div id="Textdiv" class="container">
+			    	<h1 id="Ttitle">What I Do</h1>
+			        <p>I make mods and hacks of games, for knowledge and for fun. Like these things.</p>
+			        <img id="slideshow" src="http://puu.sh/llWhI/bb34af74fc.png"/>
+			    </div></td>
+			</tr>
+			<tr>
+				<td colspan="2"><div class="container" style="margin-top: 3%; min-height: 20vh;">
+					<h3>A Change in Style</h3>
+					<p>A lot of stuff around here has been cleaned up,and I mean a <b>lot</b> has been cleaned up. Also the web version of the prm editor got a nice update but its still not 100% complete. Eventually i'll finish it.</p>
+				</div></td>
+			</tr>
+		</tbody>
+	</table>
+    <div id = "exWrapper">
+	<h3 id="morevids" position="relative">More Videos</h3>
+    	<table id="exVideos" align="center">
+    		<tbody>
+    			<tr>
+    			</tr>
+    		</tbody>
+    	</table>
     </div>
 </body>
 </html>

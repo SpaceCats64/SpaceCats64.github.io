@@ -72,9 +72,15 @@ $(document).ready(()=>{
 			for (var i = 0; i < prmCount; i++) {
 				prms.push(new param(dv));
 			}
-			for(var i = 0; i < pCount; i++){
-				$('#params').append('<li class="prop" id="'+i+'"onclick="loadParam(this.id)">' + prms[i].name + '</li>');
+			i = -1;
+			function load(){
+				if (i++ < prmCount) {
+					$('#params').append('<td width="150" height="150" class="prop" id="'+i+'" onclick="loadParam(this.id)">' + prms[i].name + '</td>');
+					$('#'+i).hide().fadeIn(300);
+					setTimeout(load, 50);
+				}
 			}
+			load();
 		};
 		reader.readAsArrayBuffer(document.getElementById('prmFile').files[0]);
 	});

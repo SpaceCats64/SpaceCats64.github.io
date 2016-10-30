@@ -1,15 +1,8 @@
 $(document).ready(()=>{
-	$("#LMB").hide();
 	$("#BGM").hide();
 	$("#BBG").hide();
 
-	$("#dTitle").click(()=>{
-		$("#LMB").slideToggle(200);
-	});
-	$("#bTitle").click(()=>{
-		$("#BGM").slideToggle(200);
-	});
-	$("#gTitle").click(()=>{
-		$("#BBG").slideToggle(200);
+	$("h1").click((e)=>{
+		$(e.target).next().animate({width:'toggle', opacity:'toggle'}, 500);
 	});
 });
