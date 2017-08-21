@@ -1,27 +1,31 @@
-<div class="mdl-shadow--3dp" style="width: 80%; margin-left: 10%; background-color: white; padding: 15px; margin-bottom: 5%;">
+<div class="mdl-shadow--3dp" style="width: 80%; margin-left: 8%; background-color: white; padding: 10px; margin-bottom: 5%;">
     <h2 style="text-align: center;">Cross-Platform Chaos: C#'s Shortcoming</h2>
-    <p>I want to start off by saying that c# is a great and useful language; but it has a few shortcomings. These often have to do with c#'s cross platform implementations. 
+    <p style="text-align: left;">I want to start off by saying that c# is a great and useful language; but it has a few shortcomings. These often have to do with c#'s cross platform implementations. 
     Even then, most things work fine as both mono and dotnet are really well made. No, where C# falls short in being a viable crossplatform language seems to lie in its gui 
 	toolkits (or lack thereof). I'm going to go through the different gui toolkits I could find and go through what I think their issues are. So lets get started.
-	<hr/>
+	</p><hr/>
 	<h3 style="text-align: center;">WinForms</h3>
+	<p style="text-align: left;">
     Its winforms.
 	But seriously, it looks bad on any other system than windows and runs pretty bad on anything that isn't Windows.
-	<hr/>
+	</p><hr/>
 
 	<h3 style="text-align: center;">GTK#</h3>
+	<p style="text-align: left;">
 	GTK# is ok. Its not particularly <i>bad</i> as much as it is outdated/underdeveloped. GTK# is still using gtk2 even thought gtk3 has been around for a while now and gtk4 is on its way, yet gtk# has yet to
 	update. GTK# really only suffers because of a lack of updates, which is unfourtunate because it has potential to be a great way of bridging the crossplatform windows/linux/osx gui gap. 
-    <hr/>
+    </p><hr/>
 
 	<h3 style="text-align: center;">Eto</h3>
+	<p style="text-align: left;">
 	What even is Eto? It seems like it would be an ok gui toolkit if it wasn't so strange. Basically Eto is a gui toolkit that is built on other gui toolkits, the idea being that it gets
 	built with whatever toolkit is native to the system, so for instance if you build it on linux you'd use the gtk3 version, if you build on windows you'd use the wpf version, etc etc.
 	The problem I had with Eto was the strange issues with being tied fairly strongly to monodevelop. Ive had issues getting monodevelop working on my pc and even when I did setting Eto
 	up didn't work very well. Overall the best of the bunch, as well the most interesting of all of them. I hope that in the future the devs could see it fit to move away from using monodevelop
-	for a lot of things and maybe make their own standalone gui designers and such.<hr/>
+	for a lot of things and maybe make their own standalone gui designers and such.</p><hr/>
 	
 	<h3 style="text-align: center;">Conclusion</h3>
+	<p style="text-align: left;">
 	Multiplatform C# could have been so good, but it's been just a bit too long for it to truly thrive. What C# needs is to be a proper compiled language much like C, C++ and even Rust; as  while
 	there are things like dotnet core, having a jit defeats the entire point of having a compiled language in my opinion. The entire point of using a compiled language rather than a scripting language
 	is becase you want there to be as little overhead as possible, you want the best preformance you can get without it taking up lots of resources. You want something quick and snappy, something that
