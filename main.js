@@ -7,5 +7,5 @@ $.ajax({url:"https://github.com/SpaceCats64", crossDomain: true, type:"GET"}).do
         $("#pinnedRepos").append('<div class="mdl-grid-cell mdl-cell--3-col"><div class="mdl-card mdl-shadow--3dp projectCard"><h3><a style="color: rgba(0,0,0,.87);" href="https://github.com/SpaceCats64/' + repoName + '">'+repoName+'</a></h3><hr><p>'+repoDesc+'<br>Language: '+repoData[0]+'<span style="margin-left: 5%">Stars: '+(repoData[1] == undefined ? 0 : repoData[1])+'</span></p></div></div>');
     });
 }).fail(function(){
-    $("#pinnedRepos").append('<div class="mdl-grid-cell mdl-cell--3-col"><div class="mdl-card mdl-shadow--3dp projectCard"><h3>Error Loading Pinned Repositories, try reloading...</h3></div>);
+    $("#pinnedRepos").append('<div class="mdl-grid-cell mdl-cell--3-col"><div class="mdl-card mdl-shadow--3dp projectCard"><h3>Error Loading Pinned Repositories, try reloading...</h3></div>');
 });
