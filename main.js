@@ -1,4 +1,4 @@
-$.ajax({url:"https://github.com/SpaceCats64", crossDomain: true, type:"GET"});.done(function(res){
+$.ajax({url:"https://github.com/SpaceCats64", crossDomain: true, type:"GET"}).done(function(res){
     $(res.responseText).find('.pinned-repo-item-content').each((index, repo)=>{
         repoName = $(repo).find(".repo").first().text();
         repoDesc = $(repo).find(".pinned-repo-desc").first().text();
