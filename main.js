@@ -1,5 +1,5 @@
 //Sadly I need to use a cross-origin proxy for now, hopefully I can find a way around this.
-$.get("https://github.com/SpaceCats64").done(function(res){
+$.get("https://cors-anywhere.herokuapp.com/https://github.com/SpaceCats64").done(function(res){
     pinnedRepos = $(res).find('.pinned-repo-item-content').each((index, repo)=>{
         repoName = $(repo).find(".repo").first().text();
         repoDesc = $(repo).find(".pinned-repo-desc").first().text();
